@@ -63,7 +63,6 @@ class RuleController extends Controller
     {
         try {
             $tags = array_map('trim', explode(',', $rule->apply_tags));
-            // dd($tags);
             foreach (Product::all() as $product) {
                 $matches = true;
     
@@ -77,9 +76,7 @@ class RuleController extends Controller
                         case '<':  $check = $productValue < $condition->value; break;
                         default:   $check = false;
                     }
-                    // dd('Condition check for ' . $field . ': ' . $check);
                     if (!$check) {
-                        dd('Condition not met for product: ' . $product->product_name);
                         $matches = false;
                         break;
                     }
