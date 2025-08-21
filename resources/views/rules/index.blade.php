@@ -8,12 +8,12 @@
     <form id="ruleForm" action="{{ route('rules.store') }}" method="POST">
         @csrf
         <div class="form-group mb-3">
-            <label>Rule Name</label>
+            <label>Rule Name <span class="text-danger">*</span></label>
             <input type="text" name="rule_name" class="form-control" required>
         </div>
 
         <div class="form-group mb-3">
-            <label>Conditions</label>
+            <label>Conditions<span class="text-danger">*</span></label>
             <div id="conditions-wrapper">
                 <div class="row mb-2 condition-row">
                     <div class="col-md-4">
@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group mb-3">
-            <label>Apply Tags</label>
+            <label>Apply Tags <span class="text-danger">*</span></label>
             <input type="text" name="apply_tags" class="form-control" placeholder="comma,separated,tags" required>
         </div>
 

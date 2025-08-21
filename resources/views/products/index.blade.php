@@ -8,42 +8,42 @@
     <form id="productForm" action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group mb-3">
-            <label>Product Name</label>
+            <label>Product Name <span class="text-danger">*</span></label>
             <input type="text" name="product_name" class="form-control">
         </div>
 
         <div class="form-group mb-3">
-            <label>Product Description</label>
+            <label>Product Description <span class="text-danger">*</span></label>
             <textarea name="product_description" class="form-control" rows="4"></textarea>
         </div>
 
         <div class="form-group mb-3">
-            <label>Product Price</label>
+            <label>Product Price <span class="text-danger">*</span></label>
             <input type="text" name="product_price" class="form-control">
         </div>
 
         <div class="form-group mb-3">
-            <label>Product SKU</label>
+            <label>Product SKU <span class="text-danger">*</span></label>
             <input type="text" name="product_sku" class="form-control">
         </div>
 
         <div class="form-group mb-3">
-            <label>Product Qty</label>
+            <label>Product Qty <span class="text-danger">*</span></label>
             <input type="text" name="product_qty" class="form-control">
         </div>
 
         <div class="form-group mb-3">
-            <label>Product Type</label>
+            <label>Product Type <span class="text-danger">*</span></label>
             <input type="text" name="product_type" class="form-control">
         </div>
 
         <div class="form-group mb-3">
-            <label>Product Vendor</label>
+            <label>Product Vendor <span class="text-danger">*</span></label>
             <input type="text" name="product_vendor" class="form-control">
         </div>
 
         <div class="form-group mb-3">
-            <label>Product Image</label>
+            <label>Product Image <span class="text-danger">*</span></label>
             <input type="file" name="product_image" class="form-control">
         </div>
 
